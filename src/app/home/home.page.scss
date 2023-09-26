@@ -1,27 +1,36 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.logo-amazonas {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.dados-militar {
+  margin-top: 30px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+#image-logo {
+  display: flex; /* Define o elemento pai como um flex container */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
-#container a {
-  text-decoration: none;
+// .title-policia {
+//   color: black; 
+//   font-size: 18px;
+// }
+
+// .title-certificado {
+//   color: black; 
+//   font-size: 14px;
+// }
+
+#ccaf {
+  display: flex; /* Define o elemento pai como um flex container */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.header-ccaf {
+  background-color: darkcyan;
 }
