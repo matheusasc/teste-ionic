@@ -1,0 +1,7 @@
+{
+  "name": "ccaf-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
