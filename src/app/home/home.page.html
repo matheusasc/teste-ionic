@@ -13,13 +13,17 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
+
+    <ion-button (click)="authenticateWithBiometrics()" expand="full">
+      Iniciar Autenticação Biométrica
+    </ion-button>
   
   <div id="image-logo" style="display: flex; flex-direction: column;">
-      <ion-img class="logo-amazonas" src="assets/images/amazon.png"/>
-      <ion-text class="title">
-        <h1 style="color: black; font-size: 18px;">POLÍCIA MILITAR DO AMAZONAS</h1>
-        <h3 style="color: black; font-size: 14px;">CERTIFICADO DE CARGA DE ARMA DE FOGO</h3>
-      </ion-text>
+    <ion-img class="logo-amazonas" src="assets/images/amazon.png"/>
+    <ion-text class="title">
+    <h1 style="color: black; font-size: 18px;">POLÍCIA MILITAR DO AMAZONAS</h1>
+    <h3 style="color: black; font-size: 14px;">CERTIFICADO DE CARGA DE ARMA DE FOGO</h3>
+    </ion-text>
   </div>
   
   <div class="dados-militar">
