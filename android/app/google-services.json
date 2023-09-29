@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1061196810301",
+    "project_id": "teste-notification-2d206",
+    "storage_bucket": "teste-notification-2d206.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061196810301:android:cb70a2eece1a60a3acc254",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB82hp8QnHAAELDfGKwyGLZ6hhD1m-Truc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
