@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
 import { FcmService, FCM_TOKEN } from '../services/fcm/fcm.service';
+import { Camera, CameraResultType } from '@capacitor/camera';
 
 @Component({
   selector: 'app-home',
@@ -39,6 +40,14 @@ export class HomePage implements OnInit {
       });
   }
 
+  takePicture = async () => {
+    const image = await Camera.getPhoto({
+      quality: 90,
+      allowEditing: true,
+      resultType: CameraResultType.Uri
+    });
+  }
+  
   ngOnInit() {
     this.fcmService.redirect.subscribe((token) => {
       this.fcmToken = token;

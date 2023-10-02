@@ -7,7 +7,7 @@
   </ion-header> -->
 
   <ion-header [translucent]="true">
-    <ion-toolbar class="header-ccaf">
+    <ion-toolbar class="header-ccaf"> 
       <ion-title>
         CCAF
       </ion-title>
@@ -17,6 +17,10 @@
     <ion-button (click)="authenticateWithBiometrics()" expand="full">
       Iniciar Autenticação Biométrica
     </ion-button>
+
+    <div>
+      <ion-button (click)="takePicture()">Câmera</ion-button>
+    </div>
 
   
   <div id="image-logo" style="display: flex; flex-direction: column;">
