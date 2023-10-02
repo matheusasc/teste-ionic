@@ -1,16 +1,21 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
+import { FcmService, FCM_TOKEN } from '../services/fcm/fcm.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor(private fingerprintAIO: FingerprintAIO) {}
+  fcmToken: string = '';
 
+  constructor(
+    private fingerprintAIO: FingerprintAIO,
+    private fcmService: FcmService) {}
+    
 
   authenticateWithBiometrics() {
     this.fingerprintAIO
@@ -32,6 +37,12 @@ export class HomePage {
         // Tratamento de erro
         console.error('Erro na autenticação biométrica', error);
       });
+  }
+
+  ngOnInit() {
+    this.fcmService.redirect.subscribe((token) => {
+      this.fcmToken = token;
+    });
   }
 
 }
